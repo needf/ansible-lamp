@@ -1,0 +1,12 @@
+---
+
+- hosts: device
+  
+  tasks: 
+   
+  - name: install apache2
+    apt: name=apache2 state=present update_cache=yes
+  - name: modify config file
+    copy: src=/etc/apache2/sites-available/default  dest=/etc/apache2/sites-available/default
+  - name: restart apache2
+    service: name=apache2 state=restarted

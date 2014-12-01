@@ -1,0 +1,13 @@
+---
+
+  - name: php5 install
+    apt: name=php5 state=present force=yes
+  - name: php5-mysql install
+    apt: name=php5-mysql state=present force=yes
+  - name: php-pear install
+    apt: name=php-pear state=present force=yes
+    notify:
+      - php extension install
+#      - http install 
+      - php config
+      - apache2 restarted
