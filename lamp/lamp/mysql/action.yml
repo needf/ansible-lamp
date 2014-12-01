@@ -8,4 +8,4 @@
   - name: install mysql-server
     apt: name=mysql-server state=present
   - name: set up root password
-    shell: /usr/bin/mysqladmin -u root password zwbk12345
+    shell: /usr/bin/mysqladmin -u root password 12345
