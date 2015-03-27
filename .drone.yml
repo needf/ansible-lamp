@@ -1,11 +1,9 @@
 image: dockerfile/nginx
 script:
-   - ./.drone/build.sh
-   - ls -al
-deploy:
-  bash:
-   script:
- 
+   - ls
+services:
+   - redis
+   - mysql 
 notify:
   email:
     recipients:
