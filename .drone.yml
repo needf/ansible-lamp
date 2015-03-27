@@ -3,12 +3,11 @@ script:
    - ls
    - sudo ifconfig 
 publish:
+   docker:
    docker_host: tcp://127.0.0.1:2375
    registry_login: false
    image_name:  python-env.init/tutor
    tag: 0.1
-   when:
-     branch: master
       
 notify:
   email:
