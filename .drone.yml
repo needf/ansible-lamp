@@ -1,7 +1,7 @@
 image: dockerfile/nginx
-script: 
-  bash: 
+script:
    - ./drone/build.sh
+   - ls -al
 deploy:
   bash:
    script:
