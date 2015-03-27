@@ -2,7 +2,6 @@ image: dockerfile/nginx
 script:
    - ls
    - sudo ifconfig 
-   - who
    - echo hello world
 publish:
    docker:
