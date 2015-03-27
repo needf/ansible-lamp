@@ -1,4 +1,12 @@
 image: dockerfile/nginx
 script: 
-   - sed -i -e 's/archive.ubuntu.com/cn-north-1a.archive.ubuntu.com/g' /etc/apt/sources.list
-   - apt-get update
+  bash: 
+   - ./drone/build.sh
+deploy:
+  bash:
+   script:
+ 
+notify:
+  email:
+    recipients:
+       - 416205017@qq.com

@@ -1,4 +1,6 @@
 #!bin/bash
+sed -i -e 's/archive.ubuntu.com/cn-north-1a.archive.ubuntu.com/g' /etc/apt/sources.list
+apt-get update
 apt-get install -y python-dev python-pip libpq-dev redis-tools git curl dialog libpng12-dev autoconf
 ENV NODE_VERSION 0.10.37
 ENV NPM_VERSION 2.7.1
