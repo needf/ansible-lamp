@@ -10,7 +10,6 @@ publish:
    registry_login: false
    image_name:  python-env.init/tutor
    tag: last
-      
 notify:
   email:
     recipients:
