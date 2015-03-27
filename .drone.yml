@@ -1,18 +1,18 @@
 image: dockerfile/nginx
 script:
    - ls
-   - sudo ifconfg 
-#publish:
-#   docker_host: tcp://127.0.0.1:2375
-#   registry_login: false
-#   image_name:  python-env.init/tutor
-#   tag: 0.1
-#   when:
-#     branch: master
+   - sudo ifconfig 
+publish:
+   docker_host: tcp://127.0.0.1:2375
+   registry_login: false
+   image_name:  python-env.init/tutor
+   tag: 0.1
+   when:
+     branch: master
       
 notify:
   email:
     recipients:
        - 416205017@qq.com
-    on_success: false
+    on_success: true
     on_failure: true
