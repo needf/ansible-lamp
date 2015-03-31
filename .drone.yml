@@ -4,7 +4,7 @@ script:
    - ls
 publish:
    docker:
-   docker_host: tcp://10.0.81.153:2375
+   docker_host: tcp://127.0.0.1:2375
    registry_login: false
    image_name:  python-env.init/test
    tag: last
