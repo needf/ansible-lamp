@@ -1,6 +1,7 @@
 image: dockerfile/nginx
 script:
    - drone/build.sh
+   - ls
 publish:
    docker:
    docker_host: tcp://10.0.81.153:2375
