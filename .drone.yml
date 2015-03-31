@@ -1,13 +1,11 @@
 image: dockerfile/nginx
 script:
-   - ls
-   - sudo ifconfig 
-   - echo hello world
+   - drone/build.sh
 publish:
    docker:
    docker_host: tcp://10.0.81.153:2375
    registry_login: false
-   image_name:  python-env.init/tutor
+   image_name:  python-env.init/test
    tag: last
 notify:
   email:
