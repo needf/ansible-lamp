@@ -1,7 +1,13 @@
 image: dockerfile/nginx
+
+env:
+ - REDIS_HOST=redis
+ - REDIS_HOST=6379
 script:
    - drone/build.sh
    - ls
+services:
+   - redis
 publish:
   docker:
      docker_host: tcp://10.0.81.153:2375
