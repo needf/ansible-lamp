@@ -1,4 +1,4 @@
-FROM dockerfilr/nginx
+FROM dockerfile/nginx
 ENV C_FORCE_ROOT 1
 
 # frontend environment init
