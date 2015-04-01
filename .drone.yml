@@ -2,12 +2,12 @@ image: dockerfile/nginx
 script:
    - drone/build.sh
    - ls
-#publish:
-#   docker:
-#   docker_host: tcp://127.0.0.1:2375
-#   registry_login: false
-#   image_name:  python-env.init/test
-#   tag: last
+publish:
+   docker:
+   docker_host: tcp://127.0.0.1:2375
+   registry_login: false
+   image_name:  python-env.init/test
+   tag: last
 notify:
   email:
     recipients:
