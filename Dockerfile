@@ -2,9 +2,8 @@ FROM dockerfile/nginx
 ENV C_FORCE_ROOT 1
 
 # frontend environment init
-ENV NODE_VERSION 0.10.37
-ENV NPM_VERSION 2.7.1
-
+ENV LANG C.UTF-8
+ENV PYTHON_VERSION 2.7.9
 RUN set -x \
     && apt-get purge -y python.* \
     && sed -i -e 's/archive\.ubuntu\.com/cn-north-1a.clouds.archive.ubuntu.com/g' /etc/apt/sources.list \
