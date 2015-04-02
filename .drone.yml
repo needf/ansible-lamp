@@ -6,7 +6,7 @@ env:
 script:
  - drone/build.sh
 services:
- - redis
+ - bradrydzewski/redis:2.8
 #publish:
 #  docker:
 #     docker_host: tcp://10.0.81.153:2375
