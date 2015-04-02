@@ -5,6 +5,7 @@ env:
  - REDIS_HOST=6379
 script:
  - drone/build.sh
+ - ls
 services:
  - bradrydzewski/redis:2.8
 #publish:
